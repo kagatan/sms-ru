@@ -1,6 +1,14 @@
 # sms-ru
 https://sms.ru/
 
+## Установка
+
+Для установки данного пакета выполните в терминале следующую команду:
+
+```shell
+$ composer require kagatan/sms-ru
+```
+
 
 ```php
 <?php
