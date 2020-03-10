@@ -1,0 +1,22 @@
+{
+    "name": "kagatan/sms-ru",
+    "description": "Send sms from sms.ru",
+    "keywords": [
+      "sms-ru"
+    ],
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Kagatan",
+            "email": "max_stupakov@mail.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+      "psr-4":{
+        "Kagatan\\SmsRu\\": "src/"
+      }
+  }
+}
