@@ -1,42 +1,11 @@
 <?php
 
+
 namespace Kagatan\SmsRu;
 
 
 class SmsRuMessage
 {
-    /**
-     * API Key
-     *
-     * @var
-     */
-    public $key;
-
-    
-    /**
-     * The text content of the message.
-     *
-     * @var string|null
-     */
-    public $text;
-
-
-    /**
-     * Receiver phone number.
-     *
-     * @var string|null
-     */
-    public $to;
-
-
-    /**
-     * Sender name. Leave 'null' for using value from settings.
-     *
-     * @var string|null
-     */
-    public $from;
-
-
     /**
      * Static factory method.
      *
@@ -62,6 +31,23 @@ class SmsRuMessage
         return $this;
     }
 
+    /**
+     * Set phone
+     *
+     * @param $phone
+     * @return $this
+     */
+    public function phone($phone)
+    {
+        $this->phone = (string)$phone;
+        return $this;
+    }
+
+    public function checkId($id)
+    {
+        $this->check_id = (string)$id;
+        return $this;
+    }
 
     /**
      * Set a sender name.
@@ -125,3 +111,4 @@ class SmsRuMessage
         return (array)$this;
     }
 }
+
